@@ -4,13 +4,11 @@ import { CreatePost } from "./CreatePost"
 import { useState } from 'react'
 import Modal from "./Modal"
 
-export function PostsList() {
+export function PostsList({isPosting,onStopPosting}) {
     const [enteredBody, setEnteredBody] = useState('')
     const [enteredName, setEnteredName] = useState('')
-    const [isModalOpen, setISModalOpen] = useState(true)
-    function hideModal() {
-        setISModalOpen(false)
-    }
+    
+
 
     function bodyChangeHandler(event) {
         setEnteredBody(event.target.value)
@@ -29,8 +27,8 @@ export function PostsList() {
     // }
     return (
         <div>
-            {isModalOpen && (
-                <Modal onClose={hideModal}>
+            {isPosting && (
+                <Modal onClose={onStopPosting}>
                 <CreatePost
                     onBodyChange={bodyChangeHandler}
                     onNameChange={onNameChangeHandler} />
