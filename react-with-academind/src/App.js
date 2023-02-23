@@ -1,5 +1,7 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+// import { Post } from './Components/Post';
+import { PostsList } from './Components/PostsList';
 
 function App() {
   return (
@@ -7,6 +9,10 @@ function App() {
       <header className="App-header">
         Hello World
       </header>
+      
+      {/* <main> */}
+        <PostsList />
+      {/* </main> */}
     </div>
   );
 }
