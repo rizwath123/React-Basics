@@ -1,18 +1,14 @@
 // import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 // import { Post } from './Components/Post';
 import { PostsList } from './Components/PostsList';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        Hello World
-      </header>
-      
-      {/* <main> */}
+      <main>
         <PostsList />
-      {/* </main> */}
+      </main>
     </div>
   );
 }
