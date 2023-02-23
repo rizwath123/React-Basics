@@ -23,7 +23,7 @@ export function CreatePost(props) {
             <p>
                 <label htmlFor="name">Your Name:</label>
                 <input  id="name" type="text" required 
-                    placeholder="Type your name here"></input>
+                    placeholder="Type your name here" onChange={props.onNameChange}></input>
             </p>
         </form>
     )
