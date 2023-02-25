@@ -25,6 +25,11 @@ export function CreatePost(props) {
                 <input  id="name" type="text" required 
                     placeholder="Type your name here" onChange={props.onNameChange}></input>
             </p>
+            <p className={classes.actions}>
+
+            <button className={classes.button} type="button" onClick={props.closeFn}>Cancel</button>
+            <button className={classes.button} type="submit">Submit</button>
+            </p>
         </form>
     )
 }

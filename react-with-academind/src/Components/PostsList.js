@@ -31,7 +31,8 @@ export function PostsList({isPosting,onStopPosting}) {
                 <Modal onClose={onStopPosting}>
                 <CreatePost
                     onBodyChange={bodyChangeHandler}
-                    onNameChange={onNameChangeHandler} />
+                    onNameChange={onNameChangeHandler} 
+                    closeFn={onStopPosting}/>
             </Modal>
             )}
             {/* {isModalOpen ? <Modal onClose={hideModal}>
